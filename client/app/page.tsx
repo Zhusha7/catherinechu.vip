@@ -1,30 +1,22 @@
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
-
-import { title, subtitle } from "@/components/primitives";
+import { HeroSection } from "@/components/hero-section";
+import { SpecialtiesSection } from "@/components/specialties-section";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
-        <br />
-        <span className={title()}>
-          websites regardless of your design experience.
-        </span>
-        <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
-        </div>
-      </div>
-
-      <div className="mt-8">
-        <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
-          </span>
-        </Snippet>
-      </div>
-    </section>
+    <>
+      <HeroSection />
+      <SpecialtiesSection />
+      <h1 className="text-center text-5xl font-bold mb-6 md:mb-8">
+        Как выглядит терапия?
+      </h1>
+      <p className="flex justify-center md:text-3xl lg:text-xl text-center mb-6 md:mb-8">
+        Во время первой встречи мы обсудим вашу ситуацию, определим цели терапии
+        и выберем подходящие методы работы. Каждая сессия будет проходить в
+        комфортной и поддерживающей атмосфере, где вы сможете открыто говорить о
+        своих чувствах и переживаниях. В процессе терапии мы будем работать над
+        развитием навыков саморегуляции, улучшением эмоционального состояния и
+        достижением поставленных целей.
+      </p>
+    </>
   );
 }

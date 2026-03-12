@@ -5,6 +5,28 @@ export const siteConfig = {
   description: "Клинический нейропсихолог, Екатерина Чулкова.",
   navItems: [
     {
+      label: "Главная",
+      href: "/",
+    },
+    {
+      label: "Обо мне",
+      href: "/about",
+    },
+    {
+      label: "Документы",
+      href: "/specialties",
+    },
+    {
+      label: "Контакты",
+      href: "/contact",
+    },
+    {
+      label: "Условия терапии",
+      href: "/terms",
+    },
+  ],
+  navMenuItems: [
+    {
       label: "Домашняя страница",
       href: "/",
     },
@@ -22,28 +44,6 @@ export const siteConfig = {
     },
     {
       label: "Условия терапии",
-      href: "/terms",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-    {
-      label: "Specialties",
-      href: "/specialties",
-    },
-    {
-      label: "Contact",
-      href: "/contact",
-    },
-    {
-      label: "Terms of Service",
       href: "/terms",
     },
   ],
